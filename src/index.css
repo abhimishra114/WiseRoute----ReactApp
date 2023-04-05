@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        @apply font-[Poppins]
+    }
+
+    .scroll-transition{
+            @apply transition-transform duration-[400ms] hover:translate-y-2.5;
+    }
+    .text-design:after {
+        @apply content-[""] block w-20 md:w-28 h-[3px] absolute left-52 top-1/2;
+        background: #cd5c5c;
+      }
+
+      .box {
+        @apply shadow-[0px_163px_65px_rgba(0,0,0,0.01),0px_92px_55px_rgba(0,0,0,0.05),0px_41px_41px_rgba(0,0,0,0.09),0px_10px_22px_rgba(0,0,0,0.1),0px_0px_0px_rgba(0,0,0,0.1)];
+      }
+      /* box-hover */
+      .hover-box:hover{
+        transform: scale(1.1)
+      }
+
+      .text-lines {
+        @apply relative max-w-[500px] text-center mx-auto my-[100px] before:content-["_"] before:h-0.5 before:w-[50px] before:md:w-[100px] before:lg:w-[130px]  before:block before:absolute before:left-0 before:top-2/4 after:content-["_"] after:h-0.5 after:w-[50px] after:md:w-[100px] after:lg:w-[130px] after:block after:absolute after:right-0 after:top-2/4;
+      }
+      .text-lines:before {
+        background: red;
+      }
+      .text-lines:after {
+        background: red;
+      }
+      
+      .company:hover{
+        transform: scale(1.3)
+      }
+}
