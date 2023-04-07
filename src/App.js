@@ -6,11 +6,13 @@ import Form from './Components/Form';
 import About from './Components/About';
 import Services from './Components/Services';
 import {Routes, Route} from 'react-router-dom';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <>
     <Router>
+    <ScrollToTop/>
     <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}/>

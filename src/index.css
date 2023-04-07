@@ -10,6 +10,10 @@
         @apply font-[Poppins]
     }
 
+    .aster::after {
+        @apply content-["*"] text-[red];
+      }
+
     .scroll-transition{
             @apply transition-transform duration-[400ms] hover:translate-y-2.5;
     }

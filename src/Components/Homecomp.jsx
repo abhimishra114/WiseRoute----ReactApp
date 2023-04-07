@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import oraclebusiness from '../Assets/oracle-e-business-suite-logo.png' 
 import oraclenetwork from '../Assets/oracle-netsuite-logo.png' 
 import sap from '../Assets/sap.png' 
@@ -16,14 +16,19 @@ import geocon from '../Assets/geocon.jpg'
 import hb from '../Assets/hb.png' 
 import folk from '../Assets/folk-serv.png' 
 import greener from '../Assets/greener-pestures.png' 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Homecomp() {
+  useEffect(() => {
+    AOS.init({duration: 3000});
+}, [])
   return (
     <>
          {/* <!-- Softwares and Clients --> */} 
         <section className="px-10 mt-10 container">
             {/* <!-- Softwares --> */}
-            <div className="my-8 md:my-16 text-xl text-lines">Softwares</div>
-            <div className="grid grid-cols-2 md:grid-cols-4 w-1/2 mx-auto gap-10 md:gap-x-20 items-center">
+            <div data-aos="fade-up" className="my-8 md:my-16 text-xl text-lines">Softwares</div>
+            <div data-aos="fade-left" className="grid grid-cols-2 md:grid-cols-4 w-1/2 mx-auto gap-10 md:gap-x-20 items-center">
                 <img src={oraclebusiness} className="transition-all duration-500 company" alt=""/>
                 <img src={oraclenetwork} className="transition-all duration-500 company" alt=""/>
                 <img src={sap} className="transition-all duration-500 company" alt=""/>
@@ -34,8 +39,8 @@ function Homecomp() {
                 <img src={compu} className="transition-all duration-500 company" alt=""/>
             </div>
             {/* <!-- clients --> */}
-            <div className="my-8 md:my-16 text-xl text-lines">Clients</div>
-            <div className="grid grid-cols-3 w-64 md:w-1/2 mx-auto gap-8 md:gap-x-20 items-center">
+            <div data-aos="fade-down" className="my-8 md:my-16 text-xl text-lines">Clients</div>
+            <div data-aos="fade-right" className="grid grid-cols-3 w-64 md:w-1/2 mx-auto gap-8 md:gap-x-20 items-center">
                 <img src={tim} className="transition-all duration-500 company" alt=""/>
                 <img src={service} className="transition-all duration-500 company" alt=""/>
                 <img src={ekam} className="transition-all duration-500 company" alt=""/>

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import img from '../Assets/intro-img.svg'
-// import {Link} from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function HomeIntroduction() {
+  useEffect(() => {
+    AOS.init({duration: 3000});
+}, [])
   return (
     <>
-    <section id='introduction'>
+    <section data-aos="fade-left" id='introduction'>
         <div  className="flex flex-col-reverse mt-5 md:flex-row items-center justify-between px-10 container mb-8">
             <div className="flex-1 p-3 items-start flex flex-col gap-4">
                 <h1 className="font-bold text-3xl text-red-500 relative text-design">Introduction</h1>

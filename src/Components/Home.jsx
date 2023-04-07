@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Carousel from './Carousel';
 import Typewriter from 'typewriter-effect';
 import HomeScrolldown from './HomeScrolldown';
@@ -9,6 +9,8 @@ import HomeFeatures from './HomeFeatures';
 import HomeComp from './Homecomp'
 import Whatwedo from './Whatwedo';
 import {Link} from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const slides = [
   'https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg',
   'https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475660_1280.jpg',
@@ -16,9 +18,14 @@ const slides = [
   'https://cdn.pixabay.com/photo/2018/01/13/18/55/leather-3080553_1280.jpg'
   ]
 function Home() {
+  useEffect(() => {
+    AOS.init({duration: 3000});
+}, [])
   return (
     <>
-    <main id='home' className='z-20'>
+    <div className='overflow-hidden'>
+
+    <main data-aos="flip-left" id='home' className='z-20'>
       <div className=' px-5 rounded-md lg:h-full container xl:w-2/3 mx-auto mt-20 relative'>
           <div className='text-white text-xl md:text-6xl p-5 font-bold absolute top-10 sm:top-28 lg:top-60 left-16 md:left-22 lg:left-28 z-30'>
             <Typewriter
@@ -52,6 +59,7 @@ function Home() {
     <HomeComp/>
     {/* whatwedo */}
     <Whatwedo/>
+    </div>
     </>
   );
 }
