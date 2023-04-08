@@ -25,10 +25,10 @@ function ServicePanel() {
         </div>
         <div  className="flex flex-col mt-5 items-center justify-between px-10 container mb-8">
              {/* <!-- Image --> */}
-             <div className="flex-1 p-3">
+             <div className="flex p-3">
                 <img src={triangle} className="w-11/12 mx-auto" alt=""/>
             </div>
-            <div className="flex-1 p-3 items-start flex flex-col gap-4">
+            <div className="flex p-3 items-start flex-col gap-4">
                 {/* cards */}
                 <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-7 mt-20 relative'>
                     {/* card-1 */}
