@@ -15,10 +15,6 @@ function Services() {
         <ServiceIntro/>
         <ServiceTextBox/>
         <ServicePanel/>
-        <CFOService/>
-        <ERPService/>
-        <TreasuryService/>
-        <TaxationService/>
       </div>
     </>
   )

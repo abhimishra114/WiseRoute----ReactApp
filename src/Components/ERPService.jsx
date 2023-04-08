@@ -3,17 +3,20 @@ import ERP from '../Assets/Picture4.png'
 import {Link} from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-function ERPService() {
+function ERPService(props) {
     useEffect(() => {
         AOS.init({duration: 3000});
     }, [])
   return (
     <>
-        <section id='ERF' className='container mx-auto px-10'>
-        <div className='my-24'>
-            <h1 className='text-center font-bold underline underline-offset-8 text-primary-main-blue text-5xl'>ERP Functional Consultancy</h1>
+        <section id='ERF' className='container mx-auto px-10 rounded-md border-2 border-black'>
+        <div className='my-3 flex items-center justify-between'>
+            <h1 className='text-center font-bold underline underline-offset-8 text-primary-main-blue text-2xl lg:text-5xl'>ERP Service</h1>
+            <div className='cursor-pointer'>
+                {props.logo}
+            </div>
         </div>
-        <div  className="flex flex-col mt-5 md:flex-row items-center justify-between px-5 md:px-10 container gap-10 mb-8">
+        <div  className="flex flex-col mt-5 md:flex-row items-center justify-between px-0 md:px-10 container gap-10 mb-8">
             {/* <!-- Image --> */}
             <div className="flex-1 p-3">
                 <img src={ERP} className="" alt=""/>

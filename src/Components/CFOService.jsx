@@ -3,17 +3,20 @@ import CFO from '../Assets/Picture3.png'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-function CFOService() {
+function CFOService(props) {
     useEffect(() => {
         AOS.init({duration: 3000});
     }, [])
   return (
     <>
-        <section id='CFO' className='container mx-auto px-10'>
-        <div className='my-24'>
-            <h1 className='text-center font-bold underline underline-offset-8 text-primary-main-blue text-5xl'>CFO Service</h1>
+        <section id='CFO' className='container mx-auto rounded-md px-10 border-2 border-black'>
+        <div className='my-3 flex items-center justify-between'>
+            <h1 className='text-center font-bold underline underline-offset-8 text-primary-main-blue text-2xl lg:text-5xl'>CFO Service</h1>
+            <div className='cursor-pointer'>
+                {props.logo}
+            </div>
         </div>
-        <div  className="flex flex-col-reverse mt-5 md:flex-row items-center justify-between px-5 md:px-10 container mb-8">
+        <div  className="flex flex-col-reverse mt-5 md:flex-row items-center justify-between px-0 lg:px-5 md:px-10 container mb-8">
             <div className="flex-1 p-3 items-start flex flex-col gap-4">
                 <ul className='text-[15px] px-0'>
                     <li className='list-disc'>Financial Advisory</li>

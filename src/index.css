@@ -43,4 +43,28 @@
       .company:hover{
         transform: scale(1.3)
       }
+      .cont {
+        @apply w-[300px] h-[400px];
+        perspective: 800px;
+      }
+      .cont:hover > .card {
+        @apply cursor-pointer;
+        transform: rotateY(180deg);
+      }
+      .card {
+        @apply h-full w-full relative transition-transform duration-[1500ms];
+        transform-style: preserve-3d;
+      }
+      .front,
+      .back {
+        @apply h-full w-full shadow-[9px_8px_4px_rgba(0,0,0,0.25)] absolute rounded-[2rem];
+        backface-visibility: hidden;
+      }
+      .back {
+        @apply bg-[#fffff] flex flex-col justify-center items-center gap-20;
+        transform: rotateY(180deg);
+      }
+
+    
+      
 }
