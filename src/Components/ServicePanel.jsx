@@ -11,9 +11,17 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import CFOService from './CFOService'
 import ERPService from './ERPService';
+import TreasuryService from './TreasuryService'
+import TaxationService from './TaxationService'
+import PayrollService from './PayrollService';
+import ProcessService from './ProcessService';
 function ServicePanel() {
     const [linkCFO, setCFO] = useState(false)
     const [linkERP, setERP] = useState(false)
+    const [linktreasury, settreasury] = useState(false)
+    const [linktaxation, settaxation] = useState(false)
+    const [linkpayroll, setpayroll] = useState(false)
+    const [linkprocess, setprocess] = useState(false)
     useEffect(() => {
         AOS.init({duration: 3000});
     }, [])
@@ -84,7 +92,7 @@ function ServicePanel() {
                             <div className='absolute bottom-0 text-4xl px-3 py-1 rounded-tl-3xl -right-1 text-white bg-blue-400'>&#8594;</div>
                         </div>
                         <div class="back">
-                            <a href="#_" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                            <button onClick={()=>settreasury(!linktreasury)} class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                             <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
                             <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -93,11 +101,11 @@ function ServicePanel() {
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </span>
                             <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Learn More</span>
-                            </a>
+                            </button>
                         </div>
                         </div>
                     </div>
-                    {/* card-3 */}
+                    {/* card-4 */}
                     <div class="cont relative">
                         <div class="card text-center">
                         <div class="front p-5  flex flex-col items-center gap-6 overflow-hidden">
@@ -106,7 +114,7 @@ function ServicePanel() {
                             <div className='absolute bottom-0 text-4xl px-3 py-1 rounded-tl-3xl -right-1 text-white bg-blue-400'>&#8594;</div>
                         </div>
                         <div class="back">
-                            <a href="#_" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                            <button onClick={()=>settaxation(!linktaxation)} class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                             <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
                             <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -115,11 +123,11 @@ function ServicePanel() {
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </span>
                             <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Learn More</span>
-                            </a>
+                            </button>
                         </div>
                         </div>
                     </div>
-                    {/* card-3 */}
+                    {/* card-5 */}
                     <div class="cont relative">
                         <div class="card text-center">
                         <div class="front p-5  flex flex-col items-center gap-6 overflow-hidden">
@@ -128,7 +136,7 @@ function ServicePanel() {
                             <div className='absolute bottom-0 text-4xl px-3 py-1 rounded-tl-3xl -right-1 text-white bg-blue-400'>&#8594;</div>
                         </div>
                         <div class="back">
-                            <a href="#_" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                            <button onClick={()=>setpayroll(!linkpayroll)} class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                             <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
                             <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -137,11 +145,11 @@ function ServicePanel() {
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </span>
                             <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Learn More</span>
-                            </a>
+                            </button>
                         </div>
                         </div>
                     </div>
-                    {/* card-3 */}
+                    {/* card-6 */}
                     <div class="cont relative">
                         <div class="card text-center">
                         <div class="front p-5  flex flex-col items-center gap-6 overflow-hidden">
@@ -150,7 +158,7 @@ function ServicePanel() {
                             <div className='absolute bottom-0 text-4xl px-3 py-1 rounded-tl-3xl -right-1 text-white bg-blue-400'>&#8594;</div>
                         </div>
                         <div class="back">
-                            <a href="#_" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                            <button onClick={()=>setprocess(!linkprocess)} class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                             <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
                             <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -159,33 +167,55 @@ function ServicePanel() {
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </span>
                             <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Learn More</span>
-                            </a>
+                            </button>
                         </div>
                         </div>
                     </div>
                     {/* CFO */}
                     {
                         linkCFO &&
-                        <div className='absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md top-0 left-0'>
+                        <div className='absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md lg:top-32 left-0'>
                             <CFOService logo={<CancelIcon onClick={()=>setCFO(false)}/>}/>
                         </div>
                     }
                     {/* ERP */}
                     {
                         linkERP &&
-                        <div className='absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md top-0 left-0'>
+                        <div className='absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md top-48 lg:top-32 left-0'>
                             <ERPService logo={<CancelIcon onClick={()=>setERP(false)}/>}/>
                         </div>
                     }
-
-
+                    {/* Treasury Management */}
+                    {
+                        linktreasury &&
+                        <div className='top-[30%] md:top-40 lg:top-32 absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md left-0'>
+                            <TreasuryService logo={<CancelIcon onClick={()=>settreasury(false)}/>}/>
+                        </div>
+                    }
+                    {/* Taxation & Compliances */}
+                    {
+                        linktaxation &&
+                        <div className='top-[50%] md:top-40 lg:top-32 absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md left-0'>
+                            <TaxationService logo={<CancelIcon onClick={()=>settaxation(false)}/>}/>
+                        </div>
+                    }
+                    {/* Payroll Management */}
+                    {
+                        linkpayroll &&
+                        <div className='top-[70%] md:top-[50%] lg:top-32 absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md left-0'>
+                            <PayrollService logo={<CancelIcon onClick={()=>setpayroll(false)}/>}/>
+                        </div>
+                    }
+                    {/* Process OutSourching */}
+                    {
+                        linkprocess &&
+                        <div className='top-[80%] md:top-[50%] lg:top-32 absolute transition duration-300 z-40 bg-white shadow-2xl rounded-md left-0'>
+                            <ProcessService logo={<CancelIcon onClick={()=>setprocess(false)}/>}/>
+                        </div>
+                    }
                 </div>
             </div>
-           
         </div>
-
-        
-
     </section>
     </>
   )

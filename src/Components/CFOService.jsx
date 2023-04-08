@@ -9,15 +9,15 @@ function CFOService(props) {
     }, [])
   return (
     <>
-        <section id='CFO' className='container mx-auto rounded-md px-10 border-2 border-black'>
-        <div className='my-3 flex items-center justify-between'>
+        <section id='CFO' className='container mx-auto rounded-3xl px-10 border-2 border-black'>
+        <div data-aos="fade-up" className='my-24 flex items-center justify-between'>
             <h1 className='text-center font-bold underline underline-offset-8 text-primary-main-blue text-2xl lg:text-5xl'>CFO Service</h1>
             <div className='cursor-pointer'>
                 {props.logo}
             </div>
         </div>
         <div  className="flex flex-col-reverse mt-5 md:flex-row items-center justify-between px-0 lg:px-5 md:px-10 container mb-8">
-            <div className="flex-1 p-3 items-start flex flex-col gap-4">
+            <div data-aos="fade-right" className="flex-1 p-3 items-start flex flex-col gap-4">
                 <ul className='text-[15px] px-0'>
                     <li className='list-disc'>Financial Advisory</li>
                     <li className='list-disc'>Managing Accounting Functions</li>
@@ -36,7 +36,7 @@ function CFOService(props) {
                 <button className='px-2 py-1 text-lg bg-primary-main-blue text-white rounded-md hover:bg-white hover:text-primary-main-blue border-2 border-primary-main-blue transition duration-500'><Link to='/contact'>Interested ?</Link></button>
             </div>
             {/* <!-- Image --> */}
-            <div className="flex-1 p-3">
+            <div data-aos="fade-left" className="flex-1 p-3">
                 <img src={CFO} className="" alt=""/>
             </div>
         </div>

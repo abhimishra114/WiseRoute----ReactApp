@@ -7,7 +7,7 @@
         scroll-behavior: smooth;
     }
     body{
-        @apply font-[Poppins] box-border
+        @apply font-[Poppins] box-border m-0 p-0 
     }
 
     .aster::after {

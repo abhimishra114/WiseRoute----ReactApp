@@ -9,19 +9,19 @@ function ERPService(props) {
     }, [])
   return (
     <>
-        <section id='ERF' className='container mx-auto px-10 rounded-md border-2 border-black'>
-        <div className='my-3 flex items-center justify-between'>
+        <section id='ERF' className='container mx-auto px-10 rounded-3xl border-2 border-black'>
+        <div data-aos="fade-up" className='my-24 flex items-center justify-between'>
             <h1 className='text-center font-bold underline underline-offset-8 text-primary-main-blue text-2xl lg:text-5xl'>ERP Service</h1>
             <div className='cursor-pointer'>
                 {props.logo}
             </div>
         </div>
-        <div  className="flex flex-col mt-5 md:flex-row items-center justify-between px-0 md:px-10 container gap-10 mb-8">
+        <div  className="flex flex-col mt-5 md:flex-row items-center justify-between px-0 lg:px-5 md:px-10 container gap-10 mb-8">
             {/* <!-- Image --> */}
-            <div className="flex-1 p-3">
+            <div data-aos="fade-right" className="flex-1 p-3">
                 <img src={ERP} className="" alt=""/>
             </div>
-            <div className="flex-1 p-3 items-start flex flex-col gap-4">
+            <div data-aos="fade-left" className="flex-1 p-3 items-start flex flex-col gap-4">
                 <ul className='text-[15px] px-0'>
                     <li className='list-disc'>Understand Business requirement and evaluate potential ERP solutions</li>
                     <li className='list-disc'>Advice as to which software to choose and which modules to select within the software.</li>
