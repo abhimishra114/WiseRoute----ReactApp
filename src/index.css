@@ -65,6 +65,10 @@
         transform: rotateY(180deg);
       }
 
+      .map-shadow {
+        @apply shadow-[0px_163px_65px_rgba(0,0,0,0.01),0px_92px_55px_rgba(0,0,0,0.05),0px_41px_41px_rgba(0,0,0,0.09),0px_10px_22px_rgba(0,0,0,0.1),0px_0px_0px_rgba(0,0,0,0.1)];
+      }
+      
     
       
 }
