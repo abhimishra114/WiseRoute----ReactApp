@@ -4,6 +4,7 @@ import AboutText from './AboutText'
 import AboutTeam from './AboutTeam'
 import AboutTimline from './AboutTimline'
 import AboutMap from './AboutMap'
+import Footer from './Footer'
 function About() {
   return (
     <>
@@ -13,6 +14,7 @@ function About() {
       <AboutTeam/>
       <AboutTimline/>
       <AboutMap/>
+      <Footer page1link="/" page1="Home" page2link="/service" page2="Services" page3link="/contact" page3="Contact us"/>
     </div>
     </>
   )

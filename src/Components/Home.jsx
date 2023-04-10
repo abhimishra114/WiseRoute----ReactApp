@@ -11,6 +11,7 @@ import Whatwedo from './Whatwedo';
 import {Link} from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Footer from './Footer';
 const slides = [
   'https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg',
   'https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475660_1280.jpg',
@@ -59,6 +60,8 @@ function Home() {
     <HomeComp/>
     {/* whatwedo */}
     <Whatwedo/>
+    {/* Footer */}
+    <Footer page1link="/about" page1="About us" page2link="/service" page2="Services" page3link="/contact" page3="Contact us"/>
     </div>
     </>
   );
