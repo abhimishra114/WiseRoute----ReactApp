@@ -6,9 +6,9 @@ function AboutText() {
     <section className='container mx-auto lg:px-32 px-10 mb-10'>
         <div className=' py-10 border-y-[1px] border-black'>
             <div className='flex flex-col items-center md:flex-row md:items-start justify-between gap-20 mb-16'>
-                <h1 className='text-5xl md:text-xl lg:text-5xl font-bold lg:sticky lg:top-20 flex-[0.3]'>Together we are strong</h1>
+                <h1 id='title' className='text-5xl md:text-xl lg:text-5xl font-bold lg:sticky lg:top-20 flex-[0.3]'>Together we are strong</h1>
                 <div className='flex-[0.7] lg:pl-32'>
-                    <h1 className='font-bold mb-5'>At <span className='text-slate-700'>Wise Route</span> , we help your organization navigate the challenges associated with finance outsourcing, and leverage finance outsourcing to achieve measurable improvements in finance function efficiency and effectiveness.</h1>
+                    <h1 className='font-bold mb-5'>At <span className='text-slate-700'>Wise Route</span>, we help your organization navigate the challenges associated with finance outsourcing, and leverage finance outsourcing to achieve measurable improvements in finance function efficiency and effectiveness.</h1>
                     <h1 className=''>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, aliquid aperiam. Reprehenderit et atque accusantium quasi, ipsam eaque ratione perferendis quod cum eos distinctio animi corporis totam non velit nemo incidunt quis illo ea recusandae, ipsa culpa aperiam consectetur iste! Cum voluptatibus laborum nulla expedita explicabo, tenetur, nostrum qui quia fuga quisquam illo consequatur quis et suscipit aliquam dolore rerum molestiae quas exercitationem doloremque, corrupti eius architecto? Debitis aliquid veritatis odit dolores molestias nesciunt eum nostrum amet nihil itaque architecto, autem assumenda ut inventore? Quas perspiciatis magnam voluptate repudiandae iste</h1>
                 </div>
             </div>

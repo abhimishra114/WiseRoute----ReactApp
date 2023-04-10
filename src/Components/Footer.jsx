@@ -10,7 +10,7 @@ function Footer(props) {
                 <div className='flex flex-col gap-4 items-center text-center pb-12 border-b-2 border-black'>
                     <img src={logo} className='w-16' alt="" />
                     <h1 className='text-primary-main-blue text-4xl font-bold mb-8'>Wise Route Financial Advisory</h1>
-                    <div className='flex items-center gap-10 font-bold'>
+                    <div className='flex items-center gap-5 md:gap-10 font-bold'>
                         <h1 className='cursor-pointer'><Link to={props.page1link}>{props.page1}</Link></h1>
                         <div className='w-[2px] h-4 bg-black'></div>
                         <h1 className='cursor-pointer'><Link to={props.page2link}>{props.page2}</Link></h1>

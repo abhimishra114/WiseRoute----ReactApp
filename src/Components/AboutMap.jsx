@@ -25,7 +25,7 @@ function AboutMap() {
                 <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span></Link>
             </button>
             </div>
-            <div className='map-shadow rounded-lg p-8 flex flex-col md:flex-row items-center justify-between'>
+            <div className='map-shadow rounded-lg p-8 flex flex-col lg:flex-row items-center justify-between'>
                 {/* Place */}
                 <div className='grid grid-cols-2 gap-5'>
                     {contactplace(<LocationOnIcon/>, 'Address', '721, Broadway, New York NY 569866')}
@@ -34,8 +34,8 @@ function AboutMap() {
                     {contactplace(<AlternateEmailIcon/>, 'Email Us', 'info@wise-route.com')}
                 </div>
                 {/* map */}
-                <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.75678197124!2d72.84338130963081!3d19.162120849190647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c907dafc0f01%3A0x1c970231355fa07b!2sSwami%20Vivekananda%20Rd%2C%20Goregaon%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681020921183!5m2!1sen!2sin" width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div className=''>
+                <iframe className='w-full md:w-96' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1884.3755823681868!2d72.8460126!3d19.1623666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b64e1850c29d%3A0xc1fdebfb3ed02b71!2sShantiniketan!5e0!3m2!1sen!2sin!4v1681138998699!5m2!1sen!2sin" width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>

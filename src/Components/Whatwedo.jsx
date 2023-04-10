@@ -10,7 +10,7 @@ function Whatwedo() {
   return (
     <>
         {/* <!-- Services --> */}
-        <section id='whatwedo'  className="px-10 mt-10 container">
+        <section id='whatwedo'  className="px-10 mb-20 mt-10 container">
             <div className="my-16 text-3xl text-lines">What We Do</div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 {/* <!-- box-1 --> */}

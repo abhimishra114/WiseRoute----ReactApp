@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 function Form() {
   return (
@@ -57,6 +58,8 @@ function Form() {
 </form>
         </div>
     </section>  
+
+    <Footer page1link="/" page1="Home" page2link="/service" page2="Services" page3link="/about" page3="About"/>
     </>
   )
 }
