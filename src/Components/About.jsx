@@ -8,13 +8,13 @@ import Footer from './Footer'
 function About() {
   return (
     <>
-    <div className='pt-28'>
+    <div className='pt-28 overflow-hidden'>
       <AboutHero/>
       <AboutText/>
       <AboutTeam/>
       <AboutTimline/>
       <AboutMap/>
-      <Footer page1link="/" page1="Home" page2link="/service" page2="Services" page3link="/contact" page3="Contact us"/>
+      <Footer page1link="/" page1="Home" page2link="/service" page2="Services" page3link="/contact" page3="Contact"/>
     </div>
     </>
   )

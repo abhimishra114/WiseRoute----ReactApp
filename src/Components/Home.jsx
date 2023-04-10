@@ -61,7 +61,7 @@ function Home() {
     {/* whatwedo */}
     <Whatwedo/>
     {/* Footer */}
-    <Footer page1link="/about" page1="About us" page2link="/service" page2="Services" page3link="/contact" page3="Contact us"/>
+    <Footer page1link="/about" page1="About us" page2link="/service" page2="Services" page3link="/contact" page3="Contact"/>
     </div>
     </>
   );

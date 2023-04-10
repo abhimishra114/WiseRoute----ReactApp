@@ -5,7 +5,7 @@ function Footer(props) {
   return (
     <>
         <section className='bg-gray-300'>
-            <div className='container p-10'>
+            <div className='container mx-auto p-10'>
                 {/* logo & Name & Links */}
                 <div className='flex flex-col gap-4 items-center text-center pb-12 border-b-2 border-black'>
                     <img src={logo} className='w-16' alt="" />

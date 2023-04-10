@@ -25,7 +25,7 @@ function AboutMap() {
                 <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span></Link>
             </button>
             </div>
-            <div className='map-shadow rounded-lg p-8 flex items-center justify-between'>
+            <div className='map-shadow rounded-lg p-8 flex flex-col md:flex-row items-center justify-between'>
                 {/* Place */}
                 <div className='grid grid-cols-2 gap-5'>
                     {contactplace(<LocationOnIcon/>, 'Address', '721, Broadway, New York NY 569866')}
