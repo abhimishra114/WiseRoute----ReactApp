@@ -59,7 +59,7 @@ function Form() {
         </div>
     </section>  
 
-    <Footer page1link="/" page1="Home" page2link="/service" page2="Services" page3link="/about" page3="About"/>
+    <Footer page1link="/" page1="Home" page2link="/service" page2="Services" page3link="/about" page3="About us"/>
     </>
   )
 }

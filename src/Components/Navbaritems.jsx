@@ -4,7 +4,7 @@ function Navbaritems(props) {
   return (
     <>
       <div>
-        <h1 className='text-sm hover:opacity-70 transition duration-300'><Link to={`${props.route}`}>{props.title}</Link></h1>
+        <h1 className='text-sm hover:opacity-70 transition duration-300 font-bold'><Link to={`${props.route}`}>{props.title}</Link></h1>
       </div>
     </>
   )

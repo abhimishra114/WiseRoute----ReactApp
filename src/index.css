@@ -44,7 +44,7 @@
         transform: scale(1.3)
       }
       .cont {
-        @apply md:w-[300px] w-[240px]  h-[400px];
+        @apply w-[300px]  h-[400px];
         perspective: 800px;
       }
       .cont:hover > .card {
